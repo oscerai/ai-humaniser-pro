@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - name: Check out tool repo
+        uses: actions/checkout@v4
+        with:
+          path: tool
+
+      - name: Check out qms-tas
+        uses: actions/checkout@v4
+        with:
+          repository: oscerai/oscerai-qms-tas
+          path: qms-tas
+          token: ${{ secrets.TAS_REPO_TOKEN }}
+
+      - name: Set up Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        working-directory: tool
+        run: pip install pytest pytest-timeout
+
+      - name: Run Python unit tests
+        working-directory: tool
+        run: python -m pytest tests/test_humaniser_pro.py tests/test_meaning_checker.py tests/test_regulatory_classifier.py -q
+
+      - name: Install TAS dependencies
+        working-directory: qms-tas
+        run: npm ci
+
+      - name: Run TAS pipeline checks
+        working-directory: qms-tas
+        env:
+          TOOL_PATH: ${{ github.workspace }}/tool
+        run: node tas.js --tier pipeline --tool ai-humaniser-pro

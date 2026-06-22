@@ -1,0 +1,40 @@
+DRAFT DOCUMENT — FOR INTERNAL REVIEW ONLY
+This document is a draft Risk Management Report prepared in accordance with ISO 14971:2019 and RSK - SOP Risk Management v1. It is subject to review and approval at a formal Risk Management Review Meeting per RSK SOP section 8.9.1 before it may be considered final. Sections 11 and 14 represent the Risk Management team's current assessment pending formal meeting endorsement.
+
+This Risk Management Report documents the execution of the Risk Management Plan for Heidi Evidence v0.1.0 and presents the Risk Management team's assessment of the overall residual risk for the device. The report has been prepared in accordance with ISO 14971:2019 and fulfils the requirements of RSK – SOP Risk Management v1 (approved 27 February 2026). All risk management activities specified in the Risk Management Plan have been completed and are summarised herein. This report forms part of the Risk Management File maintained in Formwork.
+
+This report covers all risk management activities for Heidi Evidence v0.1.0 across the Planning, Development, and Pre-Release lifecycle phases. It encompasses all hazards identified through the Preliminary Hazard Analysis (PHA), development-phase hazard identification reviews, usability engineering activities, and cybersecurity threat modelling. Post-production monitoring obligations are governed by PMS – SOP Post-Market Surveillance (approved) and the product-specific Post-Market Surveillance Plan in preparation. The Usability Engineering (UE) process is documented separately in UEP-ISD-AI Scribe and Evidence Usability Engineering Plan.
+
+Risk management planning for Heidi Evidence was initiated as part of the overall Heidi Health risk management programme. A Risk Management Plan (RMP) [Heidi AI Medical Evidence Risk Management Plan] was prepared that defined: the scope of risk management activities; the risk acceptability criteria; the methods for risk analysis, risk evaluation, and risk control; the verification activities for risk controls; and the post-production information requirements.
+
+The product's intended purpose — a cloud-based clinical decision support system designed for use by qualified healthcare professionals to search, retrieve, and synthesise medical information from authoritative sources — was documented in the Use Specification [USP – USE – Use Specification (Evidence)] and reviewed by the Risk Management team as the basis for hazard identification.
+
+The risk management programme has been maintained throughout the Planning, Development, and Pre-Release phases. The Risk Management File is held in Formwork and constitutes the authoritative source of record for all risk management activities.
+
+The Risk Management File (RMF) for Heidi Evidence is maintained in Formwork. The file comprises the following components, all traceable to the product release.
+
+Risk Management Plan [Heidi AI Medical Evidence Risk Management Plan]
+
+Risk register containing all 33 Risk Table Entries (RTEs) with pre-control and post-control probability assignments completed in Formwork
+
+Risk control records — 39 registered controls with verification evidence
+
+Risk analysis commenced during the Planning phase with a Preliminary Hazard Analysis (PHA) drawing on the Intended Use statement [ITU-ISD-Evidence Intended Use], the ISO/TR 24971:2020 Annex A questionnaire, and expert clinical input from the Medical Knowledge Team.
+
+During the Development phase, the Risk Management team conducted iterative hazard identification reviews incorporating findings from: software requirement reviews; usability engineering activities; clinical literature and state-of-the-art analysis; cybersecurity threat modelling; and multidisciplinary expert review sessions focusing specifically on AI-generated clinical decision support risks, including Retrieval-Augmented Generation (RAG) accuracy, jurisdictional guideline currency, and drug interaction data completeness.
+
+The Formwork risk register for Heidi Evidence currently comprises of 33 fully assessed risk table entries, 32 identified hazards, 31 hazardous situations, and 6 categories of harm.
+
+A Preliminary Hazard Analysis (PHA) was conducted at the outset of the risk management programme. The PHA applied the ISO/TR 24971:2020 Annex A questionnaire to the intended purpose of Heidi Evidence, identifying initial hazard candidates across the following domains: AI model accuracy and reliability; Retrieval-Augmented Generation (RAG) corpus quality and currency; drug interaction and dosing information accuracy; guideline jurisdiction applicability; clinical calculation correctness; and cybersecurity threats to data confidentiality.
+
+All hazards identified in the PHA were carried forward into the Formwork risk register for full analysis. No PHA hazards were excluded without documented rationale.
+
+Development-phase hazard identification was conducted through a series of structured review sessions involving the full Risk Management team. These sessions were informed by:
+
+Clinical expert review of AI-generated response samples across all feature areas (medical queries, differential diagnosis, drug interactions, clinical calculations)
+
+Usability engineering findings from analysis of UI characteristics related to safety [UIC – USE User Interface Characteristics Related to Safety (Evidence)]
+
+State-of-the-art analysis of published literature on AI clinical decision support accuracy, including RAG-specific failure modes
+
+Cybersecurity threat modelling covering data confidentiality, integrity, and availability

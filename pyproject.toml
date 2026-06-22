@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-humaniser-pro"
+version = "2.0.0"
+description = "Makes regulatory documents sound less AI-written — without changing meaning or dropping protected terms"
+requires-python = ">=3.9"
+dependencies = [
+    "spacy>=3.0",
+    "transformers>=4.30",
+    "torch>=2.0",
+    "python-docx>=0.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-timeout>=2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+timeout = 300

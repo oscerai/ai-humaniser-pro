@@ -1,0 +1,39 @@
+Risk Management Plan — Heidi AI Medical Scribe and Heidi Evidence
+
+This Risk Management Plan governs the activities and documentation pertaining to product risks for two Heidi Health Software as a Medical Device (SaMD) products:
+
+Heidi AI Medical Scribe — an AI medical scribe that automatically generates clinical notes from doctor–patient conversations.
+
+Heidi Evidence — a clinical decision support tool that provides evidence-based clinical recommendations.
+
+Both products are developed by Heidi Health under the same Quality Management System and the same governing Risk Management Procedure (RSK — SOP Risk Management v1). The risk management process described in this plan — methods of risk analysis, criteria for risk acceptability, risk control approach, review process, and post-market activities — is identical for both products.
+
+The outputs of the risk management process are product-specific. Each product maintains a separate Risk Management File in Formwork, with its own Hazards, Hazardous Situations, Harms, Risk Controls, Failure Modes, and Risk Management Report. Where this plan refers to "the product" without further qualification, the statement applies to both products independently.
+
+This document is applicable through all phases of the medical device lifecycle for both products.
+
+Usability Engineering forms part of the overall Risk Management process for both products; however, usability activities are planned separately in the combined Usability Engineering Plan (UEP-ISD-AI Scribe and Evidence).
+
+The Risk Management Team named below is responsible for risk management activities across both Heidi AI Medical Scribe and Heidi Evidence. The team meets to review risks for each product as required by the development phase of that product; product-specific representation (e.g. Medical Knowledge specialists familiar with Evidence's clinical decision support content) is engaged as needed.
+
+The intended purpose of each product is documented separately:
+
+Heidi AI Medical Scribe — the intended purpose is detailed in [ITU-ISD-AI Scribe Intended Use].
+
+Heidi Evidence — the intended purpose is detailed in [ITU-ISD-Evidence Intended Use] (Formwork eQMS).
+
+Each product has been assigned a Software Safety Classification in accordance with the requirements of IEC 62304:2006+A1:2015 clause 4.3.
+
+Heidi AI Medical Scribe — Class C [SSC-ISD-AI Scribe Software Safety Class].
+
+Heidi Evidence — classification recorded in [SSC-ISD-Evidence Software Safety Classification] (Formwork eQMS).
+
+The Software Safety Classification for each product shall remain under consideration throughout that product's lifecycle to ensure that the classification aligns with the conclusions of the corresponding Risk Management File.
+
+Each product maintains a separate Risk Management File in Formwork — separate because Heidi AI Medical Scribe and Heidi Evidence are distinct medical devices with distinct hazards, risk controls, and residual risk profiles. The two files are independent regulatory records, each comprising its own Hazards, Hazardous Situations, Harms, Risk Controls, Failure Modes, residual risk evaluations, and Risk Management Report.
+
+This Risk Management Plan governs the risk management process for both files. All outputs associated with this plan — for each product — are maintained in the corresponding product's Risk Management File, including any changes made through the product lifecycle.
+
+Each product's Risk Management File forms a critical component of that product's Design History File (DHF) and Medical Device File.
+
+Criteria for Evaluation of Risk and Risk Acceptability

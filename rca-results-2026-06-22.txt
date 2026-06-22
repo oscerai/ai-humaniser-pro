@@ -1,0 +1,22 @@
+RCA Results — Known-New Fixer Hallucination Test — 2026-06-22
+============================================================
+
+Variant A
+  Mean hallucination: 0.028
+  Max growth: 1.062
+  Reversion rate: 0.0
+  Verdict: HALLUCINATION RISK
+
+Variant B
+  Mean hallucination: 0.028
+  Max growth: 1.062
+  Reversion rate: 0.0
+  Verdict: HALLUCINATION RISK
+
+Variant C
+  Mean hallucination: 0.011
+  Max growth: 1.118
+  Reversion rate: 0.0
+  Verdict: SAFE
+
+Overall: FIXABLE

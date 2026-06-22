@@ -33,7 +33,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Python dependencies
+      - name: Install Python test dependencies
         working-directory: tool
         run: pip install pytest pytest-timeout
 
@@ -45,8 +45,15 @@ jobs:
         working-directory: qms-tas
         run: npm ci
 
-      - name: Run TAS pipeline checks
-        working-directory: qms-tas
+      - name: Run pipeline tier
+        run: node qms-tas/tas.js --tier pipeline --tool ai-humaniser-pro
         env:
           TOOL_PATH: ${{ github.workspace }}/tool
-        run: node tas.js --tier pipeline --tool ai-humaniser-pro
+
+      - name: Upload pipeline report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-report-ai-humaniser-pro
+          path: qms-tas/results/
+          if-no-files-found: ignore

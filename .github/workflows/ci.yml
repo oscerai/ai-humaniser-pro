@@ -35,7 +35,7 @@ jobs:
 
       - name: Install Python test dependencies
         working-directory: tool
-        run: pip install pytest pytest-timeout
+        run: pip install pytest pytest-timeout spacy && python -m spacy download en_core_web_sm
 
       - name: Run Python unit tests
         working-directory: tool

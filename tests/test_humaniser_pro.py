@@ -16,7 +16,7 @@ class TestSplitParagraphs:
     """Tests for pipeline._split_paragraphs — the only truly pure function in the module."""
 
     def _fn(self):
-        from pipeline import _split_paragraphs
+        from pipeline_v2 import _split_paragraphs
         return _split_paragraphs
 
     def test_two_paragraphs(self):

@@ -52,6 +52,16 @@ class TestSplitParagraphs:
 # Integration tests — check_known_new (uses spaCy)
 # ---------------------------------------------------------------------------
 
+spacy_available = pytest.mark.skipif(
+    pytest.importorskip("spacy", reason="spacy not installed") is None,
+    reason="spacy not installed"
+)
+
+
+@pytest.mark.skipif(
+    not __import__("importlib").util.find_spec("spacy"),
+    reason="spacy not installed — known-new tests skipped"
+)
 class TestCheckKnownNew:
     """Integration tests for known_new_contract_checker.check_known_new."""
 

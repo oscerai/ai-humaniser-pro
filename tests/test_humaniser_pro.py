@@ -114,6 +114,7 @@ class TestProtectedTermsPatch:
     """Verify that the monkey-patch in profiles.regulatory prevents protected term drops."""
 
     def test_formal_profile_does_not_drop_demonstrate(self):
+        pytest.importorskip("texthumanize", reason="texthumanize library not installed — legacy test")
         from profiles.regulatory import PROTECTED_TERMS
         from texthumanize import humanize
         para = "The device shall demonstrate compliance with applicable standards."
